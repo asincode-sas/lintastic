@@ -3,7 +3,11 @@
   "version": "2.0.3",
   "description": "Eslint Remoto con las reglas unificadas de Asincode",
   "main": "./dist/index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "type": "module",
+  "files": ["dist"],
   "exports": {
     ".": {
       "import": "./dist/index.js"
@@ -17,9 +21,6 @@
     "test:coverage": "vitest --coverage",
     "test:integration": "node run --test ./test/integration/*"
   },
-  "files": [
-    "dist/*"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/asincode-sas/eslint-config-lintastic.git"
